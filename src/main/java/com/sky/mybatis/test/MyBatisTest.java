@@ -1,6 +1,8 @@
 package com.sky.mybatis.test;
 
+import com.sky.mybatis.bean.Department;
 import com.sky.mybatis.bean.Employee;
+import com.sky.mybatis.dao.DepartmentMapper;
 import com.sky.mybatis.dao.EmployeeMapper;
 import com.sky.mybatis.dao.EmployeeMapperAnnotation;
 import com.sky.mybatis.dao.EmployeeMapperPlus;
@@ -23,7 +25,8 @@ public class MyBatisTest {
 //        test02();
 //        test03();
 //        test04();
-        test05();
+//        test05();
+        test06();
     }
 
 
@@ -138,11 +141,32 @@ public class MyBatisTest {
 
 
             Employee e = mapper.getEmpByIdStep(3);
-            System.out.println(e);
+//            System.out.println(e);
             System.out.println(e.getDept());
+//            System.out.println(e.getLastName());
+
 
         } finally {
             sqlSession.close();
         }
     }
+
+    public static void test06() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        try {
+            DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
+//            Department d = mapper.getDepEmpById(1);
+//            System.out.println(d);
+//            System.out.println(d.getEmps());
+
+            Department d = mapper.getDeptEmpByIdStep(1);
+            System.out.println(d);
+            System.out.println(d.getEmps());
+
+        } finally {
+            sqlSession.close();
+        }
+    }
+
 }

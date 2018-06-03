@@ -57,4 +57,9 @@
         WHERE id = #{id}
     </select>
 
+    <select id="getEmpsByDeptId" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name,gender,email FROM tbl_employee
+        WHERE d_id = #{deptId}
+    </select>
+
 </mapper>
