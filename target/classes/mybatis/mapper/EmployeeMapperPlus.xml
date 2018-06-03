@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sky.mybatis.dao.EmployeeMapperPlus">
+
+    <resultMap id="myEmp" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="email" property="email"/>
+        <result column="gender" property="gender"/>
+    </resultMap>
+
+    <select id="getEmpById" resultMap="myEmp">
+        SELECT id, last_name,gender,email  FROM 	tbl_employee
+        WHERE id = #{id}
+    </select>
+
+
+    <resultMap id="myEmpDept" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <result column="did" property="dept.id"/>
+        <result column="dept_name" property="dept.departmentName"/>
+    </resultMap>
+
+    <resultMap id="myEmpDeptAsso" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <association property="dept" javaType="com.sky.mybatis.bean.Department">
+            <id column="did" property="id"/>
+            <result column="dept_name" property="departmentName"/>
+        </association>
+    </resultMap>
+
+    <select id="getEmpAndDept" resultMap="myEmpDeptAsso">
+        SELECT a.id, a.last_name, a.gender, a.email, a.d_id, b.id AS did, b.dept_name
+        FROM tbl_employee a INNER JOIN tbl_dept b
+        ON a.d_id = b.id
+        WHERE a.id = #{id}
+    </select>
+
+    <resultMap id="myEmpByStep" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <association property="dept" select="com.sky.mybatis.dao.DepartmentMapper.getDeptById" column="d_id"/>
+    </resultMap>
+
+    <select id="getEmpByIdStep" resultMap="myEmpByStep">
+        SELECT id, last_name,gender,email, d_id  FROM 	tbl_employee
+        WHERE id = #{id}
+    </select>
+
+</mapper>

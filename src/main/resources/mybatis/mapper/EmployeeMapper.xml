@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sky.mybatis.dao.EmployeeMapper">
+
+    <select id="getEmpByLastNameLikeReturnMap" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name AS lastName,gender,email  FROM 	tbl_employee
+        WHERE last_name LIKE #{lastName}
+    </select>
+
+    <select id="getEmpByIdReturnMap" resultType="map">
+        SELECT id, last_name AS lastName,gender,email  FROM 	tbl_employee
+        WHERE id = #{id}
+    </select>
+
+    <select id="getEmpsByLastNameLike" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name AS lastName,gender,email  FROM 	tbl_employee
+        WHERE last_name LIKE #{lastName}
+    </select>
+
+    <select id="getEmpByMap" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name AS lastName,gender,email  FROM  ${tableName}
+        WHERE id = #{id} AND last_name = #{lastName}
+    </select>
+
+    <select id="getEmpByIdAndLastName" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name AS lastName,gender,email  FROM 	tbl_employee
+        WHERE id = #{id} AND last_name = #{lastName}
+    </select>
+
+    <select id="getEmpById" resultType="employee">
+        SELECT id, last_name AS lastName,gender,email  FROM 	tbl_employee WHERE id = #{id}
+    </select>
+
+    <insert id="addEmp" parameterType="com.sky.mybatis.bean.Employee"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tbl_employee(last_name,gender,email)
+        VALUES (#{lastName},#{gender},#{email,jdbcType=NULL})
+    </insert>
+
+    <update id="updateEmp">
+        UPDATE tbl_employee
+        SET last_name = #{lastName},
+        gender = #{gender},
+        email = #{email}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteEmpById">
+        DELETE FROM tbl_employee WHERE id = #{id}
+    </delete>
+
+
+</mapper>
