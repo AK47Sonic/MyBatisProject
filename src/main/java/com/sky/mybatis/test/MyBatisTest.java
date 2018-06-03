@@ -136,6 +136,7 @@ public class MyBatisTest {
 //            System.out.println(e);
 //            System.out.println(e.getDept());
 
+
             Employee e = mapper.getEmpByIdStep(3);
             System.out.println(e);
             System.out.println(e.getDept());
