@@ -52,7 +52,37 @@
         <association property="dept" select="com.sky.mybatis.dao.DepartmentMapper.getDeptById" column="d_id"/>
     </resultMap>
 
-    <select id="getEmpByIdStep" resultMap="myEmpByStep">
+    <!--<select id="getEmpByIdStep" resultMap="myEmpByStep">-->
+        <!--SELECT id, last_name,gender,email, d_id  FROM 	tbl_employee-->
+        <!--WHERE id = #{id}-->
+    <!--</select>-->
+
+    <select id="getEmpsByDeptId" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name,gender,email FROM tbl_employee
+        WHERE d_id = #{deptId}
+    </select>
+
+
+    <resultMap id="myEmpDis" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <discriminator javaType="string" column="gender">
+            <case value="0" resultType="com.sky.mybatis.bean.Employee">
+                <association property="dept" select="com.sky.mybatis.dao.DepartmentMapper.getDeptById" column="d_id"/>
+            </case>
+            <case value="1" resultType="com.sky.mybatis.bean.Employee">
+                <!--<id column="id" property="id"/>-->
+                <!--<result column="last_name" property="lastName"/>-->
+                <!--<result column="gender" property="gender"/>-->
+                <result column="last_name" property="email"/>
+            </case>
+        </discriminator>
+
+    </resultMap>
+
+    <select id="getEmpByIdStep" resultMap="myEmpDis">
         SELECT id, last_name,gender,email, d_id  FROM 	tbl_employee
         WHERE id = #{id}
     </select>

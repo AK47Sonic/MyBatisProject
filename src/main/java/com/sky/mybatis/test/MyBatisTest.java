@@ -2,10 +2,7 @@ package com.sky.mybatis.test;
 
 import com.sky.mybatis.bean.Department;
 import com.sky.mybatis.bean.Employee;
-import com.sky.mybatis.dao.DepartmentMapper;
-import com.sky.mybatis.dao.EmployeeMapper;
-import com.sky.mybatis.dao.EmployeeMapperAnnotation;
-import com.sky.mybatis.dao.EmployeeMapperPlus;
+import com.sky.mybatis.dao.*;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -26,7 +23,8 @@ public class MyBatisTest {
 //        test03();
 //        test04();
 //        test05();
-        test06();
+//        test06();
+        testDynamicSQL();
     }
 
 
@@ -140,8 +138,8 @@ public class MyBatisTest {
 //            System.out.println(e.getDept());
 
 
-            Employee e = mapper.getEmpByIdStep(3);
-//            System.out.println(e);
+            Employee e = mapper.getEmpByIdStep(1);
+            System.out.println(e);
             System.out.println(e.getDept());
 //            System.out.println(e.getLastName());
 
@@ -160,10 +158,25 @@ public class MyBatisTest {
 //            System.out.println(d);
 //            System.out.println(d.getEmps());
 
-            Department d = mapper.getDeptEmpByIdStep(1);
-            System.out.println(d);
-            System.out.println(d.getEmps());
+//            Department d = mapper.getDeptEmpByIdStep(1);
+//            System.out.println(d);
+//            System.out.println(d.getEmps());
 
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    public static void testDynamicSQL() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        try {
+            EmployeeMapperDynamicSQL mapper = sqlSession.getMapper(EmployeeMapperDynamicSQL.class);
+            Employee e = new Employee(1, "%e%", null , null);
+            List<Employee> emps = mapper.getEmpsByConditionIf(e);
+            for (Employee emp: emps){
+                System.out.println(emp);
+            }
         } finally {
             sqlSession.close();
         }

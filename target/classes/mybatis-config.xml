@@ -13,6 +13,8 @@
 
         <setting name="logImpl" value="STDOUT_LOGGING"/>
         <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
     </settings>
 
     <!-- 3.为某个类起别名 -->
@@ -86,6 +88,7 @@
         <mapper resource="mybatis/mapper/EmployeeMapper.xml"/>
         <mapper resource="mybatis/mapper/EmployeeMapperPlus.xml"/>
         <mapper resource="mybatis/mapper/DepartmentMapper.xml"/>
+        <mapper resource="mybatis/mapper/EmployeeMapperDynamicSQL.xml"/>
         <!--<mapper resource="mybatis/mapper/EmployeeMapperPlus.xml" />-->
         <!--<mapper resource="mybatis/mapper/DepartmentMapper.xml" />-->
         <!--<mapper resource="mybatis/mapper/EmployeeMapperDynamicSQL.xml" />-->

@@ -88,6 +88,7 @@
         <mapper resource="mybatis/mapper/EmployeeMapper.xml"/>
         <mapper resource="mybatis/mapper/EmployeeMapperPlus.xml"/>
         <mapper resource="mybatis/mapper/DepartmentMapper.xml"/>
+        <mapper resource="mybatis/mapper/EmployeeMapperDynamicSQL.xml"/>
         <!--<mapper resource="mybatis/mapper/EmployeeMapperPlus.xml" />-->
         <!--<mapper resource="mybatis/mapper/DepartmentMapper.xml" />-->
         <!--<mapper resource="mybatis/mapper/EmployeeMapperDynamicSQL.xml" />-->
