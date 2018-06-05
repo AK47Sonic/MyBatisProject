@@ -6,18 +6,85 @@
     <!--OGNL-->
     <select id="getEmpsByConditionIf" resultType="com.sky.mybatis.bean.Employee">
         SELECT id, last_name,gender,email FROM tbl_employee
-        WHERE
-        <if test="id!=null">
-            id = #{id}
-        </if>
-        <if test="lastName!=null and lastName!='' &amp;&amp; lastName!=&quot;&quot;">
-            and last_name LIKE #{lastName}
-        </if>
-        <if test="email!=null and email.trim()!=&quot;&quot;">
-            and email = #{email}
-        </if>
-        <if test="gender==0 or gender==1">
-            and gender = #{gender}
-        </if>
+        <!--WHERE-->
+        <where>
+            <if test="id!=null">
+                id = #{id}
+            </if>
+            <if test="lastName!=null and lastName!='' &amp;&amp; lastName!=&quot;&quot;">
+                and last_name LIKE #{lastName}
+            </if>
+            <if test="email!=null and email.trim()!=&quot;&quot;">
+                and email = #{email}
+            </if>
+            <if test="gender==0 or gender==1">
+                and gender = #{gender}
+            </if>
+        </where>
     </select>
+    
+    <select id="getEmpsByConditionTrim" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name,gender,email FROM tbl_employee
+        <!--WHERE-->
+          <trim prefix="WHERE" prefixOverrides="" suffix="" suffixOverrides="AND">
+            <if test="id!=null">
+                id = #{id} AND
+            </if>
+            <if test="lastName!=null and lastName!='' &amp;&amp; lastName!=&quot;&quot;">
+                last_name LIKE #{lastName} AND
+            </if>
+            <if test="email!=null and email.trim()!=&quot;&quot;">
+                email = #{email} AND
+            </if>
+            <if test="gender==0 or gender==1">
+                gender = #{gender}
+            </if>
+          </trim>
+    </select>
+
+    <select id="getEmpsByConditionChoose" resultType="com.sky.mybatis.bean.Employee">
+        SELECT id, last_name,gender,email FROM tbl_employee
+        <where>
+            <choose>
+                <when test="id!=null">
+                    id = #{id}
+                </when>
+                <when test="lastName!=null">
+                    last_name LIKE #{lastName}
+                </when>
+                <when test="email!=null">
+                    email = #{email}
+                </when>
+                <otherwise>
+                    gender = #{gender}
+                </otherwise>
+            </choose>
+        </where>
+
+    </select>
+
+    <update id="updateEmp">
+        UPDATE tbl_employee
+        <set>
+            <if test="lastName!=null">
+                last_name = #{lastName},
+            </if>
+            <if test="gender!=null">
+                gender = #{gender},
+            </if>
+            <if test="email!=null">
+                email = #{email}
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <select id="getEmpsByConditionForeach" resultType="com.sky.mybatis.bean.Employee">
+        select * from tbl_employee where id in
+        <foreach collection="ids" item="item_id" separator=","
+        open="(" close=")" index="">
+          #{item_id}
+        </foreach>
+    </select>
+
 </mapper>

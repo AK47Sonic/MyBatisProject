@@ -11,9 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MyBatisTest {
     public static void main(String[] args) throws IOException {
@@ -172,11 +170,23 @@ public class MyBatisTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try {
             EmployeeMapperDynamicSQL mapper = sqlSession.getMapper(EmployeeMapperDynamicSQL.class);
-            Employee e = new Employee(1, "%e%", null , null);
-            List<Employee> emps = mapper.getEmpsByConditionIf(e);
-            for (Employee emp: emps){
+//            Employee e = new Employee(1, "%e%", null , null);
+//            List<Employee> emps = mapper.getEmpsByConditionIf(e);
+//            List<Employee> emps = mapper.getEmpsByConditionTrim(e);
+//            List<Employee> emps = mapper.getEmpsByConditionChoose(e);
+//            for (Employee emp: emps){
+//                System.out.println(emp);
+//            }
+
+//            Employee e = new Employee(1, "admin", null, null);
+//            mapper.updateEmp(e);
+//            sqlSession.commit();
+
+            List<Employee> list = mapper.getEmpsByConditionForeach(Arrays.asList(1, 2, 3));
+            for (Employee emp : list) {
                 System.out.println(emp);
             }
+
         } finally {
             sqlSession.close();
         }
