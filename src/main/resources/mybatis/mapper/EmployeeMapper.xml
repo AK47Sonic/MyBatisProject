@@ -5,6 +5,7 @@
 
 <mapper namespace="com.sky.mybatis.dao.EmployeeMapper">
 
+    <cache eviction="FIFO" flushInterval="60000" readOnly="false" size="1024"></cache>
     <select id="getEmpByLastNameLikeReturnMap" resultType="com.sky.mybatis.bean.Employee">
         SELECT id, last_name AS lastName,gender,email  FROM 	tbl_employee
         WHERE last_name LIKE #{lastName}
@@ -30,7 +31,7 @@
         WHERE id = #{id} AND last_name = #{lastName}
     </select>
 
-    <select id="getEmpById" resultType="employee">
+    <select id="getEmpById" resultType="com.sky.mybatis.bean.Employee">
         SELECT id, last_name AS lastName,gender,email  FROM 	tbl_employee WHERE id = #{id}
     </select>
 

@@ -22,7 +22,8 @@ public class MyBatisTest {
 //        test04();
 //        test05();
 //        test06();
-        testDynamicSQL();
+//        testDynamicSQL();
+        testFirstLevelCache();
     }
 
 
@@ -189,6 +190,30 @@ public class MyBatisTest {
 
         } finally {
             sqlSession.close();
+        }
+    }
+
+    public static void testFirstLevelCache() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        SqlSession sqlSession2 = sqlSessionFactory.openSession();
+        try {
+            EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+            EmployeeMapper mapper2 = sqlSession2.getMapper(EmployeeMapper.class);
+            Employee emp01 = mapper.getEmpById(1);
+            System.out.println(emp01);
+            sqlSession.close();
+
+            Employee emp02 = mapper2.getEmpById(1);
+            System.out.println(emp02);
+            sqlSession2.close();
+//            List<Employee> list = mapper.getEmpsByConditionForeach(Arrays.asList(1, 2, 3));
+//            for (Employee emp : list) {
+//                System.out.println(emp);
+//            }
+
+        } finally {
+//            sqlSession.close();
         }
     }
 
