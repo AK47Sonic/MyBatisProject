@@ -16,7 +16,7 @@ import java.util.*;
 public class MyBatisTest {
     public static void main(String[] args) throws IOException {
 //        test00();
-//        test01();
+        test01();
 //        test02();
 //        test03();
 //        test04();
@@ -24,7 +24,7 @@ public class MyBatisTest {
 //        test06();
 //        testDynamicSQL();
 //        testFirstLevelCache();
-        testBatchSave();
+//        testBatchSave();
 //        testInnerParam();
     }
 
@@ -49,11 +49,16 @@ public class MyBatisTest {
     public static void test01() throws IOException {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
+        SqlSession sqlSession2 = sqlSessionFactory.openSession();
         try {
             EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
             System.out.println(mapper.getClass());
             Employee e = mapper.getEmpById(1);
             System.out.println(e);
+
+            EmployeeMapper mapper2 = sqlSession2.getMapper(EmployeeMapper.class);
+            Employee e2 = mapper2.getEmpById(1);
+            System.out.println(e2);
         } finally {
             sqlSession.close();
         }
