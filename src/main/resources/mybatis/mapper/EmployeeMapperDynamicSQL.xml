@@ -90,7 +90,7 @@
     <insert id="addEmps">
         INSERT INTO tbl_employee(
         <include refid="insertColumn">
-            <property name="skyid" value="d_id"></property>
+            <property name="skyid" value="d_id"/>
         </include>
         )
         values
