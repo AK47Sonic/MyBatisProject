@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8504f7a-13f3-4ce4-a069-cd9d236a8653" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperDynamicSQL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperDynamicSQL.xml" />
+    <list default="true" id="c8504f7a-13f3-4ce4-a069-cd9d236a8653" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/mybatis/bean/Department.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/mybatis/bean/Department.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/mybatis/dao/DepartmentMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/mybatis/dao/DepartmentMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/mybatis/dao/EmployeeMapperPlus.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/mybatis/dao/EmployeeMapperPlus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/mybatis/bean/Employee.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/mybatis/bean/Employee.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/mybatis/test/MyBatisTest.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/mybatis/test/MyBatisTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Department.java" afterPath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Department.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperDynamicSQL.java" afterPath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperDynamicSQL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/test/MyBatisTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/sky/mybatis/test/MyBatisTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperPlus.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperPlus.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/DepartmentMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/DepartmentMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/EmployeeMapperPlus.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/EmployeeMapperPlus.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperDynamicSQL.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperDynamicSQL.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/EmployeeMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/EmployeeMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,100 +53,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployeeMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeMapperAnnotation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperAnnotation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeMapperPlus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperPlus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EmployeeMapperDynamicSQL.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperDynamicSQL.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding>
-                <marker date="1528154716008" expanded="true" signature="336:812" ph="SELECT id, l... tbl_employee" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="90" column="52" lean-forward="false" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeMapperDynamicSQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperDynamicSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepartmentMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/DepartmentMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
               <folding>
-                <marker date="1528007822628" expanded="true" signature="321:427" ph="SELECT id, l... tbl_employee" />
-                <marker date="1528007822628" expanded="true" signature="506:596" ph="SELECT id, l... tbl_employee" />
-                <marker date="1528007822628" expanded="true" signature="703:809" ph="SELECT id, l... tbl_employee" />
-                <marker date="1528007822628" expanded="true" signature="906:1024" ph="SELECT id, l... ${tableName}" />
-                <marker date="1528007822628" expanded="true" signature="1131:1249" ph="SELECT id, l... tbl_employee" />
-                <marker date="1528007822628" expanded="true" signature="1324:1406" ph="SELECT id, l... tbl_employee" />
-                <marker date="1528007822628" expanded="true" signature="1554:1664" ph="INSERT INTO tbl_employee... " />
-                <marker date="1528007822628" expanded="true" signature="1578:1664" ph="(last_name,g... " />
-                <marker date="1528007822628" expanded="true" signature="1716:1850" ph="UPDATE tbl_e... " />
-                <marker date="1528007822628" expanded="true" signature="1906:1947" ph="DELETE FROM " />
+                <marker date="1528625698338" expanded="true" signature="336:387" ph="SELECT id, l... tbl_employee" />
+                <marker date="1528625698338" expanded="true" signature="2343:2692" ph="UPDATE tbl_e... " />
+                <marker date="1528625698338" expanded="true" signature="3035:3203" ph="INSERT INTO tbl_employee... " />
+                <marker date="1528625698338" expanded="true" signature="3527:3553" ph="select * fro... tbl_employee" />
+                <marker date="1528625698338" expanded="true" signature="3664:3690" ph="select * fro... tbl_employee" />
               </folding>
             </state>
           </provider>
@@ -156,8 +72,8 @@
       <file leaf-file-name="MyBatisTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/test/MyBatisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="171" column="53" lean-forward="false" selection-start-line="171" selection-start-column="53" selection-end-line="171" selection-end-column="53" />
+            <state relative-caret-position="264">
+              <caret line="230" column="32" lean-forward="true" selection-start-line="230" selection-start-column="32" selection-end-line="230" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getSqlSessionFactory#0;class#MyBatisTest#0" expanded="false" />
@@ -168,20 +84,6 @@
                 <element signature="method#test04#0;class#MyBatisTest#0" expanded="false" />
                 <element signature="method#test05#0;class#MyBatisTest#0" expanded="false" />
                 <element signature="method#test06#0;class#MyBatisTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepartmentMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/DepartmentMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding>
-                <marker date="1528032396072" expanded="true" signature="306:375" ph="SELECT id, d... tbl_dept" />
-                <marker date="1528032396072" expanded="true" signature="960:1141" ph="SELECT d.id tbl_dept" />
-                <marker date="1528032396072" expanded="true" signature="1627:1678" ph="SELECT id, d... tbl_dept" />
               </folding>
             </state>
           </provider>
@@ -204,6 +106,9 @@
       <find>com.sky.mybatis.dao.EmployeeMapper</find>
       <find>getDeptById</find>
       <find>getEmpByIdStep</find>
+      <find>EmployeeMapper</find>
+      <find>getEmpById</find>
+      <find>getEmpsTestInnerParameter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,23 +129,25 @@
         <option value="$PROJECT_DIR$/conf/mybatis-config.xml" />
         <option value="F:/m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/session/SqlSession.class" />
         <option value="$PROJECT_DIR$/src/main/resources/EmployeeMapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/dbconfig.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperAnnotation.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3e1e8b4b-f0a6-4dae-b311-4dca868f5921/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapper.java" />
         <option value="$PROJECT_DIR$/SQL/script.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/DepartmentMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperPlus.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DepartmentMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperPlus.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperDynamicSQL.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperDynamicSQL.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3e1e8b4b-f0a6-4dae-b311-4dca868f5921/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sky/mybatis/test/MyBatisTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperDynamicSQL.xml" />
       </list>
     </option>
   </component>
@@ -263,9 +170,36 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="278" />
-    <option name="y" value="40" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MyBatisProject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MyBatisProject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MyBatisProject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MyBatisProject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="321" />
+    <option name="y" value="30" />
     <option name="width" value="1554" />
     <option name="height" value="996" />
   </component>
@@ -287,9 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,106 +229,12 @@
               <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="SQL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sky" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sky" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sky" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sky" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,7 +397,10 @@
       <workItem from="1527943969031" duration="3981000" />
       <workItem from="1527985373484" duration="25090000" />
       <workItem from="1528064588535" duration="2515000" />
-      <workItem from="1528151832368" duration="2885000" />
+      <workItem from="1528151832368" duration="3122000" />
+      <workItem from="1528238528415" duration="3484000" />
+      <workItem from="1528409893604" duration="2840000" />
+      <workItem from="1528594284585" duration="9755000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1528025128661</created>
@@ -582,27 +423,58 @@
       <option name="project" value="LOCAL" />
       <updated>1528032512654</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1528154974081</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528154974081</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1528241997770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528241997770</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <created>1528414244023</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528414244023</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46669000" />
+    <option name="totallyTimeSpent" value="62985000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="278" y="40" width="1554" height="996" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816228" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4319809" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44033414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35943776" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43095767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40979955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27576974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24253732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24924698" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19829424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -611,8 +483,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33015496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5243179" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -632,79 +505,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperPlus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/DepartmentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-          <folding>
-            <marker date="1528007822628" expanded="true" signature="321:427" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="506:596" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="703:809" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="906:1024" ph="SELECT id, l... ${tableName}" />
-            <marker date="1528007822628" expanded="true" signature="1131:1249" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1324:1406" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1554:1664" ph="INSERT INTO tbl_employee... " />
-            <marker date="1528007822628" expanded="true" signature="1578:1664" ph="(last_name,g... " />
-            <marker date="1528007822628" expanded="true" signature="1716:1850" ph="UPDATE tbl_e... " />
-            <marker date="1528007822628" expanded="true" signature="1906:1947" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#211#212#0" expanded="false" />
-            <element signature="e#238#239#0" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-            <element signature="e#634#635#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-            <element signature="e#712#713#0" expanded="false" />
-            <element signature="e#772#773#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -722,6 +529,9 @@
             <element signature="method#test04#0;class#MyBatisTest#0" expanded="false" />
             <element signature="method#test05#0;class#MyBatisTest#0" expanded="false" />
             <element signature="method#test06#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testDynamicSQL#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testFirstLevelCache#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testBatchSave#0;class#MyBatisTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,7 +568,7 @@
         <state relative-caret-position="132">
           <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,6 +587,9 @@
             <element signature="method#test04#0;class#MyBatisTest#0" expanded="false" />
             <element signature="method#test05#0;class#MyBatisTest#0" expanded="false" />
             <element signature="method#test06#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testDynamicSQL#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testFirstLevelCache#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testBatchSave#0;class#MyBatisTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -794,16 +607,16 @@
         <state relative-caret-position="198">
           <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           <folding>
-            <marker date="1528007822628" expanded="true" signature="321:427" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="506:596" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="703:809" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="906:1024" ph="SELECT id, l... ${tableName}" />
-            <marker date="1528007822628" expanded="true" signature="1131:1249" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1324:1406" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1554:1664" ph="INSERT INTO tbl_employee... " />
-            <marker date="1528007822628" expanded="true" signature="1578:1664" ph="(last_name,g... " />
-            <marker date="1528007822628" expanded="true" signature="1716:1850" ph="UPDATE tbl_e... " />
-            <marker date="1528007822628" expanded="true" signature="1906:1947" ph="DELETE FROM " />
+            <marker date="1528411434960" expanded="true" signature="408:514" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="593:683" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="790:896" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="993:1111" ph="SELECT id, l... ${tableName}" />
+            <marker date="1528411434960" expanded="true" signature="1218:1336" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="1432:1514" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="1662:1772" ph="INSERT INTO tbl_employee... " />
+            <marker date="1528411434960" expanded="true" signature="1686:1772" ph="(last_name,g... " />
+            <marker date="1528411434960" expanded="true" signature="1824:1958" ph="UPDATE tbl_e... " />
+            <marker date="1528411434960" expanded="true" signature="2014:2055" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -819,7 +632,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -837,6 +652,9 @@
             <element signature="method#test04#0;class#MyBatisTest#0" expanded="false" />
             <element signature="method#test05#0;class#MyBatisTest#0" expanded="false" />
             <element signature="method#test06#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testDynamicSQL#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testFirstLevelCache#0;class#MyBatisTest#0" expanded="false" />
+            <element signature="method#testBatchSave#0;class#MyBatisTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -846,7 +664,7 @@
         <state relative-caret-position="88">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,16 +681,16 @@
         <state relative-caret-position="132">
           <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding>
-            <marker date="1528007822628" expanded="true" signature="321:427" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="506:596" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="703:809" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="906:1024" ph="SELECT id, l... ${tableName}" />
-            <marker date="1528007822628" expanded="true" signature="1131:1249" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1324:1406" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1554:1664" ph="INSERT INTO tbl_employee... " />
-            <marker date="1528007822628" expanded="true" signature="1578:1664" ph="(last_name,g... " />
-            <marker date="1528007822628" expanded="true" signature="1716:1850" ph="UPDATE tbl_e... " />
-            <marker date="1528007822628" expanded="true" signature="1906:1947" ph="DELETE FROM " />
+            <marker date="1528411434960" expanded="true" signature="408:514" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="593:683" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="790:896" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="993:1111" ph="SELECT id, l... ${tableName}" />
+            <marker date="1528411434960" expanded="true" signature="1218:1336" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="1432:1514" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="1662:1772" ph="INSERT INTO tbl_employee... " />
+            <marker date="1528411434960" expanded="true" signature="1686:1772" ph="(last_name,g... " />
+            <marker date="1528411434960" expanded="true" signature="1824:1958" ph="UPDATE tbl_e... " />
+            <marker date="1528411434960" expanded="true" signature="2014:2055" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -970,24 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dbconfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/type/JdbcType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3e1e8b4b-f0a6-4dae-b311-4dca868f5921/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -998,46 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SQL/script.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#211#212#0" expanded="false" />
-            <element signature="e#238#239#0" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-            <element signature="e#634#635#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-            <element signature="e#712#713#0" expanded="false" />
-            <element signature="e#772#773#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,55 +853,152 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperPlus.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <caret line="27" column="96" lean-forward="false" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/bean/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperDynamicSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="90" column="52" lean-forward="false" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+        <state relative-caret-position="176">
+          <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbconfig.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csl/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csl/dao/EmployeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csl/mapping/EmployeeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1528603888131" expanded="true" signature="654:872" ph="insert into tbl_employee... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="352">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
-            <marker date="1528007822628" expanded="true" signature="321:427" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="506:596" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="703:809" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="906:1024" ph="SELECT id, l... ${tableName}" />
-            <marker date="1528007822628" expanded="true" signature="1131:1249" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1324:1406" ph="SELECT id, l... tbl_employee" />
-            <marker date="1528007822628" expanded="true" signature="1554:1664" ph="INSERT INTO tbl_employee... " />
-            <marker date="1528007822628" expanded="true" signature="1578:1664" ph="(last_name,g... " />
-            <marker date="1528007822628" expanded="true" signature="1716:1850" ph="UPDATE tbl_e... " />
-            <marker date="1528007822628" expanded="true" signature="1906:1947" ph="DELETE FROM " />
+            <marker date="1528411434960" expanded="true" signature="408:514" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="593:683" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="790:896" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="993:1111" ph="SELECT id, l... ${tableName}" />
+            <marker date="1528411434960" expanded="true" signature="1218:1336" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="1432:1514" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528411434960" expanded="true" signature="1662:1772" ph="INSERT INTO tbl_employee... " />
+            <marker date="1528411434960" expanded="true" signature="1686:1772" ph="(last_name,g... " />
+            <marker date="1528411434960" expanded="true" signature="1824:1958" ph="UPDATE tbl_e... " />
+            <marker date="1528411434960" expanded="true" signature="2014:2055" ph="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3e1e8b4b-f0a6-4dae-b311-4dca868f5921/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/test/MyBatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="171" column="53" lean-forward="false" selection-start-line="171" selection-start-column="53" selection-end-line="171" selection-end-column="53" />
+        <state relative-caret-position="264">
+          <caret line="230" column="32" lean-forward="true" selection-start-line="230" selection-start-column="32" selection-end-line="230" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getSqlSessionFactory#0;class#MyBatisTest#0" expanded="false" />
@@ -1148,22 +1013,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sky/mybatis/dao/EmployeeMapperDynamicSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapperDynamicSQL.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="154">
+          <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
           <folding>
-            <marker date="1528154716008" expanded="true" signature="336:812" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528625698338" expanded="true" signature="336:387" ph="SELECT id, l... tbl_employee" />
+            <marker date="1528625698338" expanded="true" signature="2343:2692" ph="UPDATE tbl_e... " />
+            <marker date="1528625698338" expanded="true" signature="3035:3203" ph="INSERT INTO tbl_employee... " />
+            <marker date="1528625698338" expanded="true" signature="3527:3553" ph="select * fro... tbl_employee" />
+            <marker date="1528625698338" expanded="true" signature="3664:3690" ph="select * fro... tbl_employee" />
           </folding>
         </state>
       </provider>

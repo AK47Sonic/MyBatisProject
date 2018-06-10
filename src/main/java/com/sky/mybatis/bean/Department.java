@@ -4,6 +4,12 @@ import java.io.Serializable;
 import java.util.List;
 
 public class Department implements Serializable{
+    public Department() {
+    }
+
+    public Department(Integer id) {
+        this.id = id;
+    }
 
     private Integer id;
     private String departmentName;

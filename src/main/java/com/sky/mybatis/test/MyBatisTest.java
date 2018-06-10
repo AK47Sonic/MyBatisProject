@@ -23,7 +23,9 @@ public class MyBatisTest {
 //        test05();
 //        test06();
 //        testDynamicSQL();
-        testFirstLevelCache();
+//        testFirstLevelCache();
+        testBatchSave();
+//        testInnerParam();
     }
 
 
@@ -214,6 +216,39 @@ public class MyBatisTest {
 
         } finally {
 //            sqlSession.close();
+        }
+    }
+
+    public static void testBatchSave() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        try {
+            EmployeeMapperDynamicSQL mapper = sqlSession.getMapper(EmployeeMapperDynamicSQL.class);
+            List<Employee> emps = new ArrayList<>();
+            emps.add(new Employee(null,"smith","1", "smith@sky.com", new Department(1)));
+            emps.add(new Employee(null,"Allen","1", "Allen@sky.com", new Department(1)));
+            mapper.addEmps(emps);
+            sqlSession.commit();
+
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    public static void testInnerParam() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        try {
+            EmployeeMapperDynamicSQL mapper = sqlSession.getMapper(EmployeeMapperDynamicSQL.class);
+            Employee emp = new Employee();
+            emp.setLastName("e");
+            List<Employee> list = mapper.getEmpsTestInnerParameter(emp);
+//            List<Employee> list = mapper.getEmpsTestInnerParameter(null);
+            for (Employee employee: list){
+                System.out.println(employee);
+            }
+        } finally {
+            sqlSession.close();
         }
     }
 

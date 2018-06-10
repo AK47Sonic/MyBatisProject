@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface EmployeeMapperDynamicSQL {
 
+    public List<Employee> getEmpsTestInnerParameter(Employee employee);
+
     public List<Employee> getEmpsByConditionIf(Employee employee);
 
     public List<Employee> getEmpsByConditionTrim(Employee employee);
@@ -16,5 +18,7 @@ public interface EmployeeMapperDynamicSQL {
     public void updateEmp(Employee employee);
 
     public List<Employee> getEmpsByConditionForeach(@Param("ids") List<Integer> ids);
+
+    public void addEmps(@Param("emps") List<Employee> emps);
 
 }

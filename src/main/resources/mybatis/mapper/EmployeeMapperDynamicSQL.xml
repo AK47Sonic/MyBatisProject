@@ -86,5 +86,35 @@
           #{item_id}
         </foreach>
     </select>
+    
+    <insert id="addEmps">
+        INSERT INTO tbl_employee(
+        <include refid="insertColumn">
+            <property name="skyid" value="d_id"></property>
+        </include>
+        )
+        values
+        <foreach collection="emps" item="emp" separator=",">
+            (#{emp.lastName},#{emp.email},#{emp.gender}, #{emp.dept.id})
+        </foreach>
+    </insert>
+    
+    <select id="getEmpsTestInnerParameter" resultType="com.sky.mybatis.bean.Employee">
+        <!--<if test="_databaseId=='mysql'">-->
+            <!--select * from tbl_employee-->
+        <!--</if>-->
+        <!--OGNL-->
+        <bind name="_lastName" value="'%'+lastName+'%'"/>
+        select * from tbl_employee
+        <if test="_parameter!=null">
+            WHERE last_name LIKE #{_lastName}
+        </if>
+
+    </select>
+
+    <sql id="insertColumn">
+        last_name, email, gender, ${skyid}
+    </sql>
+
 
 </mapper>
