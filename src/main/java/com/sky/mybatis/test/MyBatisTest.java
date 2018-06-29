@@ -21,10 +21,10 @@ public class MyBatisTest {
 //        test03();
 //        test04();
 //        test05();
-//        test06();
+        test06();
 //        testDynamicSQL();
 //        testFirstLevelCache();
-        testBatchSave();
+//        testBatchSave();
 //        testInnerParam();
     }
 
@@ -155,8 +155,8 @@ public class MyBatisTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try {
             DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
-//            Department d = mapper.getDepEmpById(1);
-//            System.out.println(d);
+            Department d = mapper.getDepEmpById(1);
+            System.out.println(d.getDepartmentName());
 //            System.out.println(d.getEmps());
 
 //            Department d = mapper.getDeptEmpByIdStep(1);
@@ -219,21 +219,21 @@ public class MyBatisTest {
         }
     }
 
-    public static void testBatchSave() throws IOException {
-        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-        try {
-            EmployeeMapperDynamicSQL mapper = sqlSession.getMapper(EmployeeMapperDynamicSQL.class);
-            List<Employee> emps = new ArrayList<>();
-            emps.add(new Employee(null,"smith","1", "smith@sky.com", new Department(1)));
-            emps.add(new Employee(null,"Allen","1", "Allen@sky.com", new Department(1)));
-            mapper.addEmps(emps);
-            sqlSession.commit();
-
-        } finally {
-            sqlSession.close();
-        }
-    }
+//    public static void testBatchSave() throws IOException {
+//        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+//        SqlSession sqlSession = sqlSessionFactory.openSession();
+//        try {
+//            EmployeeMapperDynamicSQL mapper = sqlSession.getMapper(EmployeeMapperDynamicSQL.class);
+//            List<Employee> emps = new ArrayList<>();
+//            emps.add(new Employee(null,"smith","1", "smith@sky.com", new Department(1)));
+//            emps.add(new Employee(null,"Allen","1", "Allen@sky.com", new Department(1)));
+//            mapper.addEmps(emps);
+//            sqlSession.commit();
+//
+//        } finally {
+//            sqlSession.close();
+//        }
+//    }
 
     public static void testInnerParam() throws IOException {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
