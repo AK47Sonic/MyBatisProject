@@ -3,6 +3,8 @@ package com.sky.mybatis.test;
 import com.sky.mybatis.bean.Department;
 import com.sky.mybatis.bean.Employee;
 import com.sky.mybatis.dao.*;
+import com.sky.mybatis.utils.SqlSessionFactoryUtils;
+import com.sky.mybatis.utils.SqlSessionFactoryUtils2;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -151,8 +153,8 @@ public class MyBatisTest {
     }
 
     public static void test06() throws IOException {
-        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
-        SqlSession sqlSession = sqlSessionFactory.openSession();
+//        SqlSession sqlSession = SqlSessionFactoryUtils.openSession();
+        SqlSession sqlSession = SqlSessionFactoryUtils2.getSqlSession();
         try {
             DepartmentMapper mapper = sqlSession.getMapper(DepartmentMapper.class);
             Department d = mapper.getDepEmpById(1);
@@ -164,7 +166,8 @@ public class MyBatisTest {
 //            System.out.println(d.getEmps());
 
         } finally {
-            sqlSession.close();
+//            sqlSession.close();
+            SqlSessionFactoryUtils2.closeSqlSession();
         }
     }
 
