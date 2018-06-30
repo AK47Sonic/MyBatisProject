@@ -9,7 +9,7 @@ import java.io.Reader;
 
 public class SqlSessionFactoryUtils2 {
 
-    private static String MB_FILE_PATH = "mybatis.cfg.xml";
+    private static String MB_FILE_PATH = "mybatis-config.xml";
 
     //使用ThreadLocal管理Mybatis中SqlSession对象
     private static final ThreadLocal<SqlSession> threadLocal = new ThreadLocal<SqlSession>();
