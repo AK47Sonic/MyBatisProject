@@ -9,4 +9,6 @@ public interface DepartmentMapper {
 
     public Department getDeptEmpByIdStep(Integer id);
 
+    Department getDepEmpByIdProc(Integer id);
+
 }
