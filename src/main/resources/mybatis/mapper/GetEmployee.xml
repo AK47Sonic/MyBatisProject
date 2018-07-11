@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sky.mybatis.dao.GetEmployee">
+
+
+    <resultMap id="myEmp" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <result column="dept_name" property="deptName"/>
+    </resultMap>
+
+    <select id="getEmployeeById" resultMap="myEmp" >
+        SELECT e.id, e.last_name, e.email, e.gender, d.dept_name FROM tbl_dept d
+        LEFT JOIN tbl_employee e
+        ON d.id = e.d_id
+        WHERE e.id = #{id}
+    </select>
+
+
+    <select id="getEmployeeByIdAnDName" resultMap="myEmp" >
+        SELECT e.id, e.last_name, e.email, e.gender, d.dept_name FROM tbl_dept d
+        LEFT JOIN tbl_employee e
+        ON d.id = e.d_id
+        WHERE e.id = #{id} and e.last_name = #{name}
+    </select>
+
+
+</mapper>
