@@ -1,6 +1,7 @@
 package com.sky.mybatis.dao;
 
 import com.sky.mybatis.bean.Employee;
+import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Map;
@@ -29,5 +30,12 @@ public interface GetEmployee {
     Employee getEmployeeByIdAnDName(@Param("id") Integer id, @Param("name") String name);
 
     Employee getEmployeeByMap(Map<String, Object> map);
+
+    //单挑记录的map封装
+    Map<Object, Object> getEmployeeByIdMap(int id);
+
+    //多条记录的map封装
+    @MapKey("id")
+    Map<Integer,Employee> getEmployeeByIdReturnMapList(Integer departId);
 
 }

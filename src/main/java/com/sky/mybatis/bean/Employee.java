@@ -11,6 +11,7 @@ public class Employee implements Serializable {
     private String lastName;
     private String gender;
     private String email;
+    private String deptName;
 
     private Department dept;
 
@@ -25,12 +26,21 @@ public class Employee implements Serializable {
     public Employee() {
     }
 
-    public Employee(Integer id, String lastName, String gender, String email, Department dept) {
+    public Employee(Integer id, String lastName, String gender, String email, Department dept, String deptName) {
         this.id = id;
         this.lastName = lastName;
         this.gender = gender;
         this.email = email;
         this.dept = dept;
+        this.deptName = deptName;
+    }
+
+    public Employee(Integer id, String lastName, String gender, String email, String deptName) {
+        this.id = id;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.email = email;
+        this.deptName = deptName;
     }
 
     public Employee(Integer id, String lastName, String gender, String email) {
@@ -47,6 +57,8 @@ public class Employee implements Serializable {
                 ", lastName='" + lastName + '\'' +
                 ", gender='" + gender + '\'' +
                 ", email='" + email + '\'' +
+                ", deptName='" + deptName + '\'' +
+                ", dept=" + dept +
                 '}';
     }
 
@@ -80,5 +92,13 @@ public class Employee implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
     }
 }

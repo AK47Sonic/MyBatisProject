@@ -11,11 +11,9 @@ import java.util.Map;
 
 public class ParaProcess {
 
-    public static void main(String[] args) throws IOException {
-        getEmployeeByMap();
-    }
 
-    public static void getEmpbyID(){
+
+    public static void getEmployeeByIdMap(){
         SqlSession sqlSession = SqlSessionFactoryUtils2.getSqlSession();
         try {
             GetEmployee getEmployee =  sqlSession.getMapper(GetEmployee.class);
@@ -53,6 +51,32 @@ public class ParaProcess {
         }finally {
             SqlSessionFactoryUtils2.closeSqlSession();
         }
+    }
+
+    public static void getEmployeeById(){
+        SqlSession sqlSession = SqlSessionFactoryUtils2.getSqlSession();
+        try {
+            GetEmployee getEmployee =  sqlSession.getMapper(GetEmployee.class);
+            Map<Object, Object> map = getEmployee.getEmployeeByIdMap(1);
+            System.out.println(map);
+        }finally {
+            SqlSessionFactoryUtils2.closeSqlSession();
+        }
+    }
+
+    public static void getEmployeeByIdReturnMapList(){
+        SqlSession sqlSession = SqlSessionFactoryUtils2.getSqlSession();
+        try {
+            GetEmployee getEmployee =  sqlSession.getMapper(GetEmployee.class);
+            Map<Integer,Employee> map = getEmployee.getEmployeeByIdReturnMapList(1);
+            System.out.println(map);
+        }finally {
+            SqlSessionFactoryUtils2.closeSqlSession();
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        getEmployeeByIdReturnMapList();
     }
 
 }

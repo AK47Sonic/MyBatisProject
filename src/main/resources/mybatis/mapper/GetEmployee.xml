@@ -33,7 +33,16 @@
         SELECT e.id, e.last_name, e.email, e.gender, d.dept_name FROM tbl_dept d
         LEFT JOIN tbl_employee e
         ON d.id = e.d_id
-        WHERE e.id = ${id} and e.last_name = "${name}"
+        WHERE e.id = ${id} and e.last_name = #{name}
+
+    </select>
+
+    <select id="getEmployeeByIdMap" resultType="map" >
+        SELECT id,last_name,gender,email from tbl_employee WHERE d_id = #{id}
+    </select>
+
+    <select id="getEmployeeByIdReturnMapList" resultType="employee" >
+        SELECT id,last_name,gender,email from tbl_employee WHERE d_id = #{departId}
     </select>
 
 
