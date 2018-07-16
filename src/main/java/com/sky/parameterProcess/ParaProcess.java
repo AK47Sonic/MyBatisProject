@@ -13,13 +13,13 @@ public class ParaProcess {
 
 
 
-    public static void getEmployeeByIdMap(){
+    public static void getEmployeeById(){
         SqlSession sqlSession = SqlSessionFactoryUtils2.getSqlSession();
         try {
             GetEmployee getEmployee =  sqlSession.getMapper(GetEmployee.class);
             Employee employee = getEmployee.getEmployeeById(1);
             System.out.println(employee.getId() + " " + employee.getLastName() + " " + employee.getGender()
-                    + " " + employee.getEmail() + " " + employee.getDeptName());
+                    + " " + employee.getEmail() + " " + employee.getDept().getDepartmentName());
         }finally {
             SqlSessionFactoryUtils2.closeSqlSession();
         }
@@ -53,7 +53,7 @@ public class ParaProcess {
         }
     }
 
-    public static void getEmployeeById(){
+    public static void getEmployeeByIdMap(){
         SqlSession sqlSession = SqlSessionFactoryUtils2.getSqlSession();
         try {
             GetEmployee getEmployee =  sqlSession.getMapper(GetEmployee.class);
@@ -76,7 +76,7 @@ public class ParaProcess {
     }
 
     public static void main(String[] args) throws IOException {
-        getEmployeeByIdReturnMapList();
+        getEmployeeById();
     }
 
 }
