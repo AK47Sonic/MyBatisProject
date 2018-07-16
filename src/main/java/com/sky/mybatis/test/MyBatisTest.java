@@ -169,6 +169,7 @@ public class MyBatisTest {
 //            Department d = mapper.getDeptEmpByIdStep(1);
 //            System.out.println(d);
 //            System.out.println(d.getEmps());
+            sqlSession.commit();
 
         } finally {
 //            sqlSession.close();
