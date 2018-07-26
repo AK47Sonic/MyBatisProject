@@ -38,4 +38,8 @@ public interface GetEmployee {
     @MapKey("id")
     Map<Integer,Employee> getEmployeeByIdReturnMapList(Integer departId);
 
+
+
+    Employee getEmployeeByIdStep(Integer id);
+
 }

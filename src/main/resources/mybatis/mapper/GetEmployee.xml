@@ -21,7 +21,21 @@
         <result column="dept_name" property="dept.departmentName"/>
     </resultMap>
 
-    <select id="getEmployeeById" resultMap="myEmp2" >
+    <resultMap id="myEmp3" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <!-- association 指定联合的javaBean对象
+        property="dept"：指定哪个属性是联合的
+        avaType:指定这个对象属性的类型
+        -->
+        <association property="dept" javaType="com.sky.mybatis.bean.Department">
+            <id column="dept_name" property="departmentName"/>
+        </association>
+
+    </resultMap>
+
+    <select id="getEmployeeById" resultMap="myEmp3" >
         SELECT e.id, e.last_name, e.email, e.gender, d.dept_name FROM tbl_dept d
         LEFT JOIN tbl_employee e
         ON d.id = e.d_id
@@ -54,7 +68,27 @@
     </select>
 
 
+    <resultMap id="myEmpByStep" type="com.sky.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <!-- association定义关联对象的封装规则
+        select：表明当前的属性是调用select指定的方法查出的结果
+        column: 指定将哪一列的值传给这个方法
+        -->
+        <association property="dept" select="com.sky.mybatis.dao.DepartmentMapper.getDeptById" column="d_id">
 
+        </association>
+    </resultMap>
 
+    <!-- 使用 association 进行分布查询:
+    1.按照员工id查出员工信息
+    2.根据查出的员工信息中的d_id查出所属部门的信息
+    3.部门设置到员工中
+    -->
+    <select id="getEmployeeByIdStep" resultMap="myEmpByStep">
+        SELECT * FROM tbl_employee WHERE id = #{id}
+    </select>
 
 </mapper>

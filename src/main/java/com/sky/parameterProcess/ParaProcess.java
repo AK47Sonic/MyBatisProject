@@ -75,8 +75,20 @@ public class ParaProcess {
         }
     }
 
+    public static void getEmployeeByIdSteps(){
+        SqlSession sqlSession = SqlSessionFactoryUtils2.getSqlSession();
+        try {
+            GetEmployee getEmployee =  sqlSession.getMapper(GetEmployee.class);
+            Employee map = getEmployee.getEmployeeByIdStep(1);
+            System.out.println(map);
+            System.out.println(map.getDept());
+        }finally {
+            SqlSessionFactoryUtils2.closeSqlSession();
+        }
+    }
+
     public static void main(String[] args) throws IOException {
-        getEmployeeById();
+        getEmployeeByIdSteps();
     }
 
 }
